@@ -49,7 +49,7 @@ export default function Gauge({
           fontWeight={600}
           fill="#0b0f1a"
         >
-          {value}%
+          {value}&nbsp;%
         </text>
       </svg>
       {showLabels && (

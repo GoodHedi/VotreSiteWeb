@@ -46,7 +46,7 @@ export default function App() {
                 letterSpacing: "-0.02em",
               }}
             >
-              Shaping{" "}
+              Façonner les{" "}
               <span
                 style={{
                   fontFamily: "'Instrument Serif', serif",
@@ -54,24 +54,24 @@ export default function App() {
                   fontWeight: 400,
                 }}
               >
-                Agencies
+                agences
               </span>
               <br />
-              of tomorrow
+              de demain
             </h1>
 
             <p
               className="mt-4 sm:mt-6 text-neutral-700 px-2"
               style={{ fontSize: "clamp(13px, 3.5vw, 16px)" }}
             >
-              The All-In-One Software Powering the Future of PR Agencies
+              Le logiciel tout-en-un qui propulse l'avenir des agences de relations presse
             </p>
 
             <a
               href="#"
               className="mt-6 sm:mt-8 inline-flex items-center gap-3 bg-[#0b0f1a] text-white rounded-full pl-6 sm:pl-7 pr-2 py-2 sm:py-2.5 text-[14px] font-medium"
             >
-              Get Started
+              Commencer
               <span className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-white/15 flex items-center justify-center">
                 <ChevronRight className="w-4 h-4" />
               </span>

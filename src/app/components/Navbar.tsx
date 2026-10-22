@@ -26,9 +26,9 @@ function Logo() {
 type NavItem = { label: string; href: string; active?: boolean; dropdown?: boolean };
 
 const NAV_ITEMS: NavItem[] = [
-  { label: "Home", href: "#", active: true },
-  { label: "Features", href: "#features" },
-  { label: "About", href: "#about" },
+  { label: "Accueil", href: "#", active: true },
+  { label: "Fonctionnalités", href: "#features" },
+  { label: "À propos", href: "#about" },
   { label: "Pages", href: "#pages", dropdown: true },
 ];
 
@@ -48,7 +48,7 @@ export default function Navbar() {
               <li key={item.label}>
                 <a
                   href={item.href}
-                  className={`flex items-center gap-1.5 ${
+                  className={`flex items-center gap-1.5 whitespace-nowrap ${
                     item.dropdown ? "text-[#ef4d23]" : "text-neutral-900"
                   }`}
                 >
@@ -65,7 +65,7 @@ export default function Navbar() {
           <div className="ml-auto flex items-center gap-2 sm:gap-3">
             <button
               type="button"
-              aria-label="Cart"
+              aria-label="Panier"
               className="hidden md:inline-flex items-center justify-center w-9 h-9 rounded-full text-neutral-800 hover:bg-neutral-100"
             >
               <ShoppingCart className="w-[18px] h-[18px]" />
@@ -75,8 +75,8 @@ export default function Navbar() {
               href="#"
               className="inline-flex items-center gap-2 bg-[#ef4d23] text-white rounded-full pl-4 pr-1.5 py-1.5 text-[13px] sm:text-[14px] font-medium whitespace-nowrap"
             >
-              <span className="hidden md:inline">Get early access</span>
-              <span className="md:hidden">Early access</span>
+              <span className="hidden lg:inline">Obtenir l'accès anticipé</span>
+              <span className="lg:hidden">Accès anticipé</span>
               <span className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
                 <ChevronRight className="w-4 h-4" />
               </span>
@@ -85,7 +85,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setOpen((v) => !v)}
-              aria-label={open ? "Close menu" : "Open menu"}
+              aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
               aria-expanded={open}
               className="md:hidden inline-flex items-center justify-center w-9 h-9 rounded-full text-neutral-900 hover:bg-neutral-100"
             >

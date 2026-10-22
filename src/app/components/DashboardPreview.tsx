@@ -34,20 +34,20 @@ function CardHeader({ title, period }: { title: string; period: string }) {
 function ClicksCard() {
   return (
     <div className="bg-white rounded-2xl p-5 text-left">
-      <CardHeader title="Clicks" period="This Month" />
+      <CardHeader title="Clics" period="Ce mois-ci" />
       <div className="mt-3 flex items-center gap-2 flex-wrap">
-        <span className="text-[28px] font-semibold leading-none text-neutral-900">6,896</span>
+        <span className="text-[28px] font-semibold leading-none text-neutral-900">6&nbsp;896</span>
         <span className="inline-flex items-center gap-1 bg-red-50 text-red-600 rounded-full px-2 py-0.5 text-[11px]">
           <TrendingDown className="w-3 h-3" />
-          -3,382 (33%)
+          -3&nbsp;382 (33&nbsp;%)
         </span>
       </div>
-      <p className="mt-1.5 text-[12px] text-neutral-500">Compared to yesterday</p>
-      <p className="mt-4 text-center text-[12px] text-neutral-700">Month Target achieved</p>
+      <p className="mt-1.5 text-[12px] text-neutral-500">Par rapport à hier</p>
+      <p className="mt-4 text-center text-[12px] text-neutral-700">Objectif mensuel atteint</p>
       <div className="mt-1">
-        <Gauge value={92} showLabels min="389K" max="425K" />
+        <Gauge value={92} showLabels min="389 k" max="425 k" />
       </div>
-      <TogglePill options={["Impressions", "Clicks"]} active={0} />
+      <TogglePill options={["Impressions", "Clics"]} active={0} />
     </div>
   );
 }
@@ -89,16 +89,16 @@ function NumberInput({ defaultValue }: { defaultValue: number }) {
 function FormCard() {
   return (
     <div className="bg-white rounded-2xl p-5 flex flex-col gap-3 text-left">
-      <Field label="Show figures for">
-        <Select value="This month" />
+      <Field label="Afficher les chiffres pour">
+        <Select value="Ce mois-ci" />
       </Field>
-      <Field label="Compare period by">
-        <Select value="Month-to-date (MTD)" />
+      <Field label="Comparer la période par">
+        <Select value="Depuis le début du mois" />
       </Field>
-      <Field label="Ste targets (This month)">
+      <Field label="Objectifs (ce mois-ci)">
         <NumberInput defaultValue={10} />
       </Field>
-      <Field label="Ste targets (This year)">
+      <Field label="Objectifs (cette année)">
         <NumberInput defaultValue={100} />
       </Field>
       <div className="flex items-center gap-4 mt-1">
@@ -106,12 +106,12 @@ function FormCard() {
           type="button"
           className="bg-[#ef4d23] text-white rounded-lg px-5 py-2 text-[13px] font-medium"
         >
-          Save
+          Enregistrer
         </button>
         <button type="button" className="underline text-[13px] text-neutral-900">
-          Cancel
+          Annuler
         </button>
-        <button type="button" aria-label="Close" className="ml-auto text-neutral-500">
+        <button type="button" aria-label="Fermer" className="ml-auto text-neutral-500">
           <X className="w-4 h-4" />
         </button>
       </div>
@@ -122,18 +122,18 @@ function FormCard() {
 function VideoStartsCard() {
   return (
     <div className="bg-white rounded-2xl p-5 text-left">
-      <CardHeader title="Video Starts" period="today" />
+      <CardHeader title="Lectures vidéo" period="aujourd'hui" />
       <div className="mt-3 flex items-center gap-2">
         <span className="text-[28px] font-semibold leading-none text-neutral-900">0</span>
         <span className="inline-flex items-center gap-1 bg-neutral-100 text-neutral-600 rounded-full px-2 py-0.5 text-[11px]">
           <TrendingUp className="w-3 h-3" />0
         </span>
       </div>
-      <p className="mt-1.5 text-[12px] text-neutral-500">Compared to yesterday</p>
+      <p className="mt-1.5 text-[12px] text-neutral-500">Par rapport à hier</p>
       <div className="mt-4">
         <Gauge value={68} color="#9ca3af" />
       </div>
-      <TogglePill options={["Video Clicks", "Video Starts"]} active={0} />
+      <TogglePill options={["Clics vidéo", "Lectures vidéo"]} active={0} />
     </div>
   );
 }
